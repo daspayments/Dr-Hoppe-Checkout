@@ -80,7 +80,7 @@ const PaymentForm = ({ amount, patientType }: PaymentFormProps) => {
         }
       })
       .then(() => {
-        router.push(`/dr-hoppe/${patientType}/thankyou`);
+        router.push(`/dr-hoppe/payment/${patientType}/thankyou`);
       })
       .catch((error) => {
         setErrorMessage(error.message);
